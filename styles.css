@@ -155,12 +155,14 @@ button:hover {
     margin-top: 10px;
 }
 
-/*================== Qi's card layout ==================*/
-.qi-card {
+/* Shared layout for Qi's and Jeel's profile cards. */
+.qi-card,
+.jeel-card {
     min-width: 0;
 }
 
-.qi-picture {
+.qi-picture,
+.jeel-picture {
     display: grid;
     place-items: center;
     width: 140px;
@@ -171,37 +173,44 @@ button:hover {
     object-fit: cover;
 }
 
-.qi-moodboard {
+.qi-moodboard,
+.jeel-moodboard {
     margin-top: 24px;
     padding-top: 16px;
     border-top: 1px solid #ddd;
 }
 
-.qi-moodboard h3 {
+.qi-moodboard h3,
+.jeel-moodboard h3 {
     margin: 0 0 16px;
 }
 
 /* Stack the 3 sections so they are readable in the card */
-.qi-moodboard-sections {
+.qi-moodboard-sections,
+.jeel-moodboard-sections {
     display: grid;
     gap: 12px;
 }
 
-.qi-moodboard-section {
+.qi-moodboard-section,
+.jeel-moodboard-section {
     padding: 16px;
     border: 1px solid #ddd;
 }
 
-.qi-moodboard-section h4 {
+.qi-moodboard-section h4,
+.jeel-moodboard-section h4 {
     margin: 0 0 8px;
 }
 
-.qi-moodboard-section p {
+.qi-moodboard-section p,
+.jeel-moodboard-section p {
     margin: 0;
     color: #555;
 }
 
-.qi-moodboard-image {
+.qi-moodboard-image,
+.jeel-moodboard-image {
     display: block;
     width: 100%;
     max-width: 400px;

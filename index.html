@@ -25,12 +25,56 @@
 <!-- Team bios section (default section) -->
 <div id="bios" class="container">
     <!-- Each card represents an individual team member -->
-    <div class="card">
+    <!-- Jeel's section uses the same layout as Qi's card. -->
+    <article class="card jeel-card">
+        <img src="img/JeelHeadshot.png" alt="Jeel Dhanani" class="jeel-picture">
         <h2>Jeel Dhanani</h2>
         <p>Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">Jeel is an experienced developer who...</p>
-    </div>
+        <button type="button" aria-expanded="false" aria-controls="bio1" onclick="toggleBio('bio1', this)">
+            Show Bio
+        </button>
+        <div id="bio1" class="bio">
+            <p>
+                Hi, I'm Jeel Dhanani! I'm pursuing a bachelor's degree in Computer Science with a concentration in
+                Information Technology at the University of North Carolina at Charlotte, graduating in December 2026.
+                My interests include web development, troubleshooting, and building practical software. My skills
+                include Python, Java, HTML, CSS, JavaScript, and Git. As a developer on our team, I enjoy solving
+                problems and collaborating to turn ideas into working projects. Outside of school, I enjoy gaming,
+                exploring new technology, hiking, and discovering new food spots.
+            </p>
+            <section class="jeel-moodboard">
+                <h3>Moodboard</h3>
+                <img src="img/JeelMoodboard.png" alt="Jeel's Build, Play, Explore moodboard: coding, circuit boards, gaming, Git, design sketches, and mountain trails" class="jeel-moodboard-image">
+                <div class="jeel-moodboard-sections">
+                    <section class="jeel-moodboard-section">
+                        <h4>Web Development</h4>
+                        <p>
+                            I enjoy turning ideas into useful websites with HTML, CSS, and JavaScript. Creating
+                            clear layouts and interactive features lets me combine creativity with problem solving.
+                        </p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development">Explore web development on MDN</a>
+                    </section>
+                    <section class="jeel-moodboard-section">
+                        <h4>Programming &amp; Problem Solving</h4>
+                        <p>
+                            Python and Java inspire me to break complex problems into smaller steps. I enjoy
+                            practicing new concepts and finding ways to automate everyday tasks.
+                        </p>
+                        <a href="https://docs.python.org/3/tutorial/">Explore the Python tutorial</a>
+                    </section>
+                    <section class="jeel-moodboard-section">
+                        <h4>Technology &amp; Collaboration</h4>
+                        <p>
+                            My Information Technology concentration motivates me to understand how software and
+                            systems work together. Tools like Git, GitHub, and VS Code help me learn, organize
+                            my work, and build projects with my team.
+                        </p>
+                        <a href="https://github.com/">Explore projects on GitHub</a>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </article>
     <div class="card">
         <!--Profile photo-->
         <img src="img/ShanelleAvatar.jpg" alt="Avatar" class="avatar">
