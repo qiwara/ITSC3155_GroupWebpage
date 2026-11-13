@@ -2,13 +2,20 @@
  * Toggles the display of an individual team member's bio
  * @param {string} bioId - The ID of the bio section to show or hide
  */
-function toggleBio(bioId) {
+function toggleBio(bioId, button) {
     const bio = document.getElementById(bioId);
     // Toggle between showing and hiding the bio section
     if (bio.style.display === "none" || bio.style.display === "") {
         bio.style.display = "block";
     } else {
         bio.style.display = "none";
+    }
+
+    // Update the label and accessibility state when a button is supplied.
+    if (button) {
+        const isExpanded = bio.style.display === "block";
+        button.textContent = isExpanded ? "Hide Bio" : "Show Bio";
+        button.setAttribute("aria-expanded", String(isExpanded));
     }
 }
 

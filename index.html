@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Added Tab icon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="img/Icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/TeamIcon.png">
     <title>Team Bio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
@@ -13,7 +13,7 @@
 <header>
     <h1>Meet Our Team</h1>
     <!-- Updated team logo-->
-    <img src="img/Logo.png" alt="Team Logo" class="team-logo">
+    <img src="img/TeamLogo.png" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
@@ -33,7 +33,7 @@
     </div>
     <div class="card">
         <!--Profile photo-->
-        <img src="img/Avatar.jpg" alt="Avatar" class="avatar">
+        <img src="img/ShanelleAvatar.jpg" alt="Avatar" class="avatar">
         <h2>Shanelle Mckenzie</h2>
         <p>Developer</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
@@ -44,7 +44,7 @@
             crafting wireframes and prototypes, as I love bringing concepts to life through drawing and building.
          <!--Mood Board-->
             <span class="title"> Inspirations &amp; Mood Board
-                <img src="img/MoodBoard.png" alt="Mood Board" class="mood-board">
+                <img src="img/ShanelleMoodBoard.png" alt="Mood Board" class="mood-board">
             </span>
             <div class="mood-board-links">
             Some of my favorite resources are:
@@ -68,57 +68,66 @@
     <img src="img/QiHeadshot.jpg" alt="Qi's avatar" class="qi-picture">
 
         <h2>Qi Wang Ye</h2>
-        <p>Scrum Master</p>
+        <p>Developer & Scrum Master</p>
 
-        <button onclick="toggleBio('bio4', this)">Show Bio</button>
-        <p id="bio4" class="bio">
-            I am a computer scientist interested in software engineering, artificial intelligence, and game
-            development. I enjoy solving problems, exploring new technologies, and turning ideas into practical
-            projects. As Scrum Master, I help our team stay organized, communicate clearly, and work toward shared
-            goals.
-        </p>
+        <button
+            type="button"
+            aria-expanded="false"
+            aria-controls="bio4"
+            onclick="toggleBio('bio4', this)"
+        >
+            Show Bio
+        </button>
+        <div id="bio4" class="bio">
+            <p>
+                I am a Junior computer science student interested in software engineering, artificial intelligence, and
+                game development. I enjoy solving problems, exploring new technologies, and contributing to open-source
+                projects. In my free time, I enjoy gaming, binging shows, and finding new restaurants. As the
+                team's Scrum Master, I help everyone stay organized, communicate clearly, and collaborate as a team.
+            </p>
 
-        <section class="qi-moodboard">
-            <h3>Moodboard</h3>
+            <section class="qi-moodboard">
+                <h3>Moodboard</h3>
+                <img src="img/QiMoodboard.png" alt="Qi's moodboard" class="qi-moodboard-image">
 
-            <div class="qi-moodboard-sections">
-                <section class="qi-moodboard-section">
-                    <h4>Software Engineering</h4>
-                    <p>
-                        Software engineering allows me to turn ideas into software solutions through teamwork and
-                        innovation. Scrum connects with my role as Scrum Master by providing a framework for
-                        collaboration, feedback, and adaptation in our work as we learn.
-                    </p>
-                    <a href="https://scrumguides.org/scrum-guide.html">
-                        Read the official Scrum Guide
-                    </a>
-                </section>
+                <div class="qi-moodboard-sections">
+                    <section class="qi-moodboard-section">
+                        <h4>Software Engineering</h4>
+                        <p>
+                            Software engineering lets me to turn ideas into software solutions through teamwork, and
+                            using Scrum as a framework, I can better collaborate, provide feedback, and adapt to
+                            changes within my team as we work and improve.
+                        </p>
+                        <a href="https://scrumguides.org/scrum-guide.html">
+                            Read the official Scrum Guide
+                        </a>
+                    </section>
 
-                <section class="qi-moodboard-section">
-                    <h4>Artificial Intelligence</h4>
-                    <p>
-                        I am interested in how AI learns from data and help people solve problems. Exploring everyday
-                        AI implementations inspires me to think about what AI can do and how to use it responsibly. I
-                        have completed DataCamp certification courses to further my understanding in AI applications
-                        and ethics.
-                    </p>
-                    <a href="https://www.datacamp.com/">
-                        Explore AI and Data skills
-                    </a>
-                </section>
-                <section class="qi-moodboard-section">
-                    <h4>Game Development</h4>
-                    <p>
-                        Game development brings my interest in computing and creating together. I enjoy using code to
-                        create interactive experiences, design game mechanics, and turn a idea into something people
-                        can enjoy. GameMaker is an engine that I use to bring those concepts to reality.
-                    </p>
-                    <a href="https://gamemaker.io/">
-                        Explore the GameMaker engine
-                    </a>
-                </section>
-            </div>
-        </section>
+                    <section class="qi-moodboard-section">
+                        <h4>Artificial Intelligence</h4>
+                        <p>
+                            From exploring AI integration in everyday apps to experimenting with LLMs models, it has
+                            inspires me to think more about AI's capabilities and how to use it responsibly. I have
+                            completed some DataCamp courses to further my understanding in AI applications and ethics.
+                        </p>
+                        <a href="https://www.datacamp.com/">
+                            Explore AI & Data skills in DataCamp
+                        </a>
+                    </section>
+                    <section class="qi-moodboard-section">
+                        <h4>Game Development</h4>
+                        <p>
+                            Game development combines my skills in computing and creating, where I can designing game
+                            mechanics inspired by what I've seen and turn them into an experience that people
+                            can enjoy. GameMaker is an engine that I frequently use to bring those concepts to life.
+                        </p>
+                        <a href="https://gamemaker.io/">
+                            Learn about the GameMaker engine
+                        </a>
+                    </section>
+                </div>
+            </section>
+        </div>
     </article>
 </div>
 

@@ -56,6 +56,26 @@ header nav button:hover {
     justify-content: space-between;
 }
 
+/* Two equal columns for bios; keep the vision section's layout independent. */
+#bios {
+    gap: 20px;
+}
+
+#bios > .card {
+    box-sizing: border-box;
+    flex: 0 0 calc(50% - 10px);
+    min-width: 0;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Stack cards on small screens for readable bios and moodboards. */
+@media (max-width: 700px) {
+    #bios > .card {
+        flex-basis: 100%;
+    }
+}
+
 /* Card styling for individual team bios */
 .card {
     background: #ffff;
@@ -135,7 +155,7 @@ button:hover {
     margin-top: 10px;
 }
 
-/*================== Qi's layout ==================*/
+/*================== Qi's card layout ==================*/
 .qi-card {
     min-width: 0;
 }
@@ -147,7 +167,8 @@ button:hover {
     max-width: 100%;
     height: 140px;
     margin: 0 auto 20px;
-    border: 1px #999;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .qi-moodboard {
@@ -178,4 +199,12 @@ button:hover {
 .qi-moodboard-section p {
     margin: 0;
     color: #555;
+}
+
+.qi-moodboard-image {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
 }
